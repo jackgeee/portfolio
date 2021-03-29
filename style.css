@@ -78,22 +78,32 @@ header {
 
 .merchant {
   background-color: lightseagreen;
+  top: 0;
+  transition: top ease 0.3s;
 }
 
 .battleship {
   background-color: lightgreen;
+  top: 0;
+  transition: top ease 0.3s;
 }
 
 .synth {
   background-color: lightpink;
+  top: 0;
+  transition: top ease 0.3s;
 }
 
 .traffic-flow {
   background-color: aquamarine;
+  top: 0;
+  transition: top ease 0.3s;
 }
 
 .git {
   background-color: mediumpurple;
+  top: 0;
+  transition: top ease 0.3s;
 }
 
 .merchant img,
@@ -111,6 +121,7 @@ header {
 .traffic-flow:hover,
 .git:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  top: -10px;
 }
 
 .link-spanner {

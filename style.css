@@ -6,7 +6,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-image: url('');
+  background-color: #bdfcff;
 }
 
 header {
@@ -64,22 +64,43 @@ header {
 .merchant,
 .battleship,
 .synth,
-.traffic-flow {
+.traffic-flow,
+.git {
   z-index: 1;
-  width: 220px;
+  width: 219px;
   height: 240px;
   position: relative;
   text-align: center;
   border-style: solid;
   border-width: unset;
   border-radius: 5px;
+}
+
+.merchant {
+  background-color: lightseagreen;
+}
+
+.battleship {
+  background-color: lightgreen;
+}
+
+.synth {
+  background-color: lightpink;
+}
+
+.traffic-flow {
   background-color: aquamarine;
+}
+
+.git {
+  background-color: mediumpurple;
 }
 
 .merchant img,
 .battleship img,
 .synth img,
-.traffic-flow img {
+.traffic-flow img,
+.git img {
   width: 213px;
   height: 100px;
 }
@@ -87,7 +108,8 @@ header {
 .merchant:hover,
 .battleship:hover,
 .synth:hover,
-.traffic-flow:hover {
+.traffic-flow:hover,
+.git:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -101,7 +123,8 @@ header {
 }
 
 .about-section {
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
   display: flex;
   width: 100%;
   margin: auto;
@@ -167,7 +190,7 @@ header {
 .intro-text p {
   margin-top: 5px;
   font-size: 22px;
-  color: #585772;
+  color: black;
   display: flex;
 }
 

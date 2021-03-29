@@ -81,24 +81,25 @@ nav {
   justify-content: space-between;
 }
 
-.merchant {
+.merchant, .battleship, .synth, .traffic-flow {
   z-index: 1;
   width: 220px;
-  height: 220px;
+  height: 240px;
   position: relative;
   text-align: center;
   border-style: solid;
   border-radius: 10px;
 }
 
-.merchant img {
+.merchant img, .battleship img, .synth img, .traffic-flow img {
   width: 200px;
   height: 100px;
 }
 
-.merchant:hover {
+.merchant:hover, .battleship:hover, .synth:hover, .traffic-flow:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
+
 
 .link-spanner {
   position: absolute;
@@ -127,8 +128,6 @@ nav {
 }
 
 .about-header {
-  text-align: center;
-  padding: 30px;
   position: relative;
 }
 
@@ -139,62 +138,8 @@ nav {
   justify-content: center;
 }
 
-.skills,
-.experience,
-.education {
-  padding: 100px;
-}
 
-.skills-list {
-  --borderWidth: 3px;
-  background: white;
-  position: relative;
-  border-radius: var(--borderWidth);
-  list-style-type: none;
-}
 
-.skills-list:after {
-  content: "";
-  position: absolute;
-  top: calc(-1 * var(--borderWidth));
-  left: calc(-1 * var(--borderWidth));
-  height: calc(100% + var(--borderWidth) * 2);
-  width: calc(100% + var(--borderWidth) * 2);
-  background: linear-gradient(
-    60deg,
-    #f79533,
-    #f37055,
-    #ef4e7b,
-    #a166ab,
-    #5073b8,
-    #1098ad,
-    #07b39b,
-    #6fba82
-  );
-  border-radius: calc(2 * var(--borderWidth));
-  z-index: -1;
-  animation: animatedgradient 3s ease alternate infinite;
-  background-size: 300% 300%;
-}
-
-@keyframes animatedgradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-.skill {
-  border-style: solid;
-  border-width: thin;
-  border-radius: 10px;
-  padding: 10px;
-}
 
 .intro {
   display: flex;

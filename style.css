@@ -6,10 +6,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-}
-
-button {
-  font-family: "Poppins", sans-serif;
+  background-image: url('');
 }
 
 header {
@@ -20,9 +17,7 @@ header {
   align-items: center;
 }
 
-.logo-container,
-.nav-links,
-.cart {
+.logo-container {
   display: flex;
 }
 
@@ -48,21 +43,6 @@ header {
   height: 60px;
 }
 
-nav {
-  flex: 2;
-}
-
-.nav-links {
-  justify-content: space-around;
-  list-style: none;
-}
-
-.nav-link {
-  color: #5f5f79;
-  font-size: 18px;
-  text-decoration: none;
-}
-
 .projects-section {
   display: flex;
   width: 90%;
@@ -71,35 +51,45 @@ nav {
 }
 
 .projects-header {
-  position: relative;
+  margin-bottom: 0;
+
 }
 
 .projects {
   width: 100%;
-  margin-top: 100px;
   display: flex;
   justify-content: space-between;
 }
 
-.merchant, .battleship, .synth, .traffic-flow {
+.merchant,
+.battleship,
+.synth,
+.traffic-flow {
   z-index: 1;
   width: 220px;
   height: 240px;
   position: relative;
   text-align: center;
   border-style: solid;
-  border-radius: 10px;
+  border-width: unset;
+  border-radius: 5px;
+  background-color: aquamarine;
 }
 
-.merchant img, .battleship img, .synth img, .traffic-flow img {
-  width: 200px;
+.merchant img,
+.battleship img,
+.synth img,
+.traffic-flow img {
+  width: 213px;
   height: 100px;
 }
 
-.merchant:hover, .battleship:hover, .synth:hover, .traffic-flow:hover {
+.merchant:hover,
+.battleship:hover,
+.synth:hover,
+.traffic-flow:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-
 
 .link-spanner {
   position: absolute;
@@ -108,64 +98,62 @@ nav {
   top: 0;
   left: 0;
   z-index: 1;
-
-  /* edit: fixes overlap error in IE7/8, 
-       make sure you have an empty gif 
-    background-image: url('empty.gif');*/
 }
 
 .about-section {
+  justify-content: space-evenly;
   display: flex;
-  width: 90%;
+  width: 100%;
   margin: auto;
-  min-height: 80vh;
 }
 
 .about {
   align-items: center;
-  width: 100%;
-  position: relative;
-}
-
-.about-header {
-  position: relative;
-}
-
-.about-blocks {
+  text-align: center;
   width: 100%;
   display: flex;
-  flex-direction: row;
   justify-content: center;
 }
 
+.resume-button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 12px;
+}
 
+.resume-button:hover {
+  background-color: #4caf50; /* Green */
+  color: white;
+}
 
+.education,
+.contact,
+.resume {
+  position: relative;
+  text-align: center;
+  padding: 50px;
+}
 
 .intro {
   display: flex;
   width: 90%;
   margin: auto;
-  min-height: 80vh;
   align-items: center;
-}
-
-.selfie {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  height: 60vh;
-}
-
-.selfie img {
-  height: 100%;
-  filter: drop-shadow(0px 5px 3px black);
-  animation: drop 1.5s ease;
 }
 
 .introduction {
   position: relative;
-  top: -100px;
   flex: 1;
+  justify-content: space-between;
 }
 
 .intro-text h1 {
@@ -180,66 +168,11 @@ nav {
   margin-top: 5px;
   font-size: 22px;
   color: #585772;
+  display: flex;
 }
 
 .cta {
   padding: 50px 0px 0px 0px;
-}
-
-.cta-select {
-  border: 2px solid #c36cbb;
-  background: transparent;
-  color: #c36cbb;
-  width: 150px;
-  height: 50px;
-  cursor: pointer;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-}
-
-.cta-select2 {
-  background: #c36cbb;
-  width: 150px;
-  height: 50px;
-  cursor: pointer;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  border: none;
-  color: white;
-  margin: 30px 0px 0px 30px;
-}
-
-.big-circle {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  z-index: -1;
-  opacity: 0.3;
-  height: 80%;
-}
-
-.med-circle {
-  position: absolute;
-  top: 30%;
-  right: 30%;
-  z-index: -1;
-  height: 60%;
-  opacity: 0.4;
-}
-
-.small-circle {
-  position: absolute;
-  bottom: 0%;
-  left: 20%;
-  z-index: -1;
-}
-
-.select {
-  width: 15%;
-  display: flex;
-  justify-content: space-around;
-  position: absolute;
-  right: 20%;
 }
 
 @keyframes drop {
@@ -267,21 +200,13 @@ nav {
   .intro-text p {
     font-size: 18px;
   }
-  .cta {
-    padding: 10px 0px 0px 0px;
+  .projects {
+    flex-direction: column;
+    align-items: center;
   }
-  .laptop-select {
-    bottom: 5%;
-    right: 50%;
-    width: 50%;
-    transform: translate(50%, 5%);
-  }
-  .cover img {
-    height: 80%;
-  }
-  .small-circle,
-  .med-circle,
-  .big-circle {
-    opacity: 0.2;
+
+  .about {
+    align-items: center;
+    flex-direction: column;
   }
 }

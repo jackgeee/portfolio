@@ -106,11 +106,18 @@ header {
   transition: top ease 0.3s;
 }
 
+.bigdata {
+  background-color: rgb(112, 145, 216);
+  top: 0;
+  transition: top ease 0.3s;
+}
+
 .merchant img,
 .battleship img,
 .synth img,
 .traffic-flow img,
-.git img {
+.git img,
+.bigdata img {
   width: 213px;
   height: 100px;
 }
@@ -119,7 +126,8 @@ header {
 .battleship:hover,
 .synth:hover,
 .traffic-flow:hover,
-.git:hover {
+.git:hover,
+.bigdata:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   top: -10px;
 }
